@@ -1,0 +1,81 @@
+<!-- HTML document with English language -->
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Bookshelf Apps</title>
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header section with the title of the app -->
+    <header class="header_bar">
+      <h1 class="header_title">Bookshelf Apps</h1>
+    </header>
+
+    <!-- Main content of the webpage -->
+    <main>
+      <!-- Section for adding a book to the bookshelf -->
+      <section class="input_section">
+        <h2>Masukkan Buku</h2>
+        <!-- Form for inputting book details -->
+        <form id="inputBook">
+          <!-- Input field for the book title -->
+          <div class="input">
+            <label for="inputBookTitle">Judul Buku</label>
+            <input id="inputBookTitle" type="text" required />
+          </div>
+          <!-- Input field for the book author -->
+          <div class="input">
+            <label for="inputBookAuthor">Penulis Buku</label>
+            <input id="inputBookAuthor" type="text" required />
+          </div>
+          <!-- Input field for the book publication year -->
+          <div class="input">
+            <label for="inputBookYear">Tahun Terbit</label>
+            <input id="inputBookYear" type="number" required />
+          </div>
+          <!-- Checkbox for indicating if the book is complete -->
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Apakah buku telah selesai dibaca?</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+          <!-- Submit button for adding the book -->
+          <button id="bookSubmit" class="buttons" type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!-- Section for searching books -->
+      <section class="search_section">
+        <h2>Cari Buku</h2>
+        <!-- Form for searching books by title -->
+        <form id="searchBook">
+          <label for="searchBookTitle">Masukkan Judul Buku</label>
+          <input id="searchBookTitle" type="text" />
+          <!-- Submit button for initiating the search -->
+          <button id="searchSubmit" type="submit">Cari</button>
+        </form>
+      </section>
+
+      <!-- Section for displaying books that are incomplete (not yet read) -->
+      <section class="book_shelf">
+        <h2>List Buku (Belum Selesai Dibaca)</h2>
+        <!-- Container for displaying the incomplete book list -->
+        <div id="incompleteBookshelfList" class="book_list"></div>
+      </section>
+
+      <!-- Section for displaying books that are complete (already read) -->
+      <section class="book_shelf">
+        <h2>List Buku (Selesai Dibaca)</h2>
+        <!-- Container for displaying the complete book list -->
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
+    </main>
+
+    <!-- JavaScript file for handling dynamic functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>

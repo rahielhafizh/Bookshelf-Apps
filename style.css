@@ -1,0 +1,268 @@
+:root {
+  --color1: #ede0d4;
+  --color2: #e6ccb2;
+  --color3: #ddb892;
+  --color4: #b08968;
+  --color5: #9c6644;
+  --color6: #7f5539;
+  --red1: #ff8fa3;
+  --red2: #ff4d6d;
+  --red3: #c9184a;
+  --red4: #a4133c;
+  --green1: #95d5b2;
+  --green2: #52b788;
+  --green3: #40916c;
+  --green4: #1b4332;
+  --black: #03071e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header_bar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color3);
+  color: var(--color6);
+}
+
+main {
+  margin: auto;
+  padding: 10px;
+  background-color: var(--color1);
+}
+
+.input_section {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid var(--color3);
+  border-radius: 10px;
+  background-color: var(--color2);
+}
+
+.input_section h2 {
+    font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color6);
+}
+
+.input_section form .input {
+  margin: 10px;
+  text-align: center;
+}
+
+.input_section form button {
+  display: flex;
+  background-color: var(--color3);
+  border: 2px solid var(--color4);
+  border-radius: 15px;
+  color: var(--color1);
+  cursor: pointer;
+  margin: auto;
+  padding: 5px;
+  width: 100px;
+  justify-content: center;
+}
+
+.input_section form button:hover {
+  box-shadow: var(--color5) 0 1px 10px;
+}
+
+.input_section form button:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.input_section form .input input {
+  display: block;
+  width: 100%;
+  background-color: var(--color1);
+  margin: 5px;
+  color: var(--color6);
+  text-align: center;
+  padding: 3px;
+}
+
+.input_section form .input label {
+  color: var(--color5);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.input_section form .input_inline {
+  margin: 10px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+  color: var(--color6);
+}
+
+.input_section form .input_inline input {
+  margin: 5px;
+}
+
+.search_section {
+  margin: auto;
+  margin-top: 15px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid var(--color3);
+  border-radius: 10px;
+  background-color: var(--color2);
+}
+
+.search_section h2 {
+  font-weight: bold;
+  text-align: center;
+  color: var(--color6);
+  font-size: 1.3rem;
+
+}
+
+.search_section form {
+  padding: 15px;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.search_section form label {
+  color: var(--color5);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.search_section form input {
+  display: block;
+  width: 100%;
+  background-color: var(--color1);
+  margin: 5px;
+  color: var(--color6);
+  text-align: center;
+  padding: 3px;
+}
+
+.search_section form button {
+    display: flex;
+    background-color: var(--color3);
+    border: 2px solid var(--color4);
+    border-radius: 15px;
+    color: var(--color1);
+    cursor: pointer;
+    margin: auto;
+    padding: 5px;
+    width: 100px;
+    justify-content: center;
+}
+
+.search_section form button:hover {
+  box-shadow: var(--color5) 0 1px 10px;
+}
+
+.search_section form button:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.book_shelf {
+    margin: auto;
+    margin-top: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+    background-color: var(--color2);
+}
+
+.book_shelf h2 {
+    text-align: center;
+    color: var(--color6);
+    font-size: 1rem;
+}
+
+.book_shelf .book_list .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid var(--color4);
+  background-color: var(--color1);
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf .book_list .book_item h3,
+p {
+  margin: 8px 0;
+  color: var(--color6);
+}
+
+.book_shelf .book_list .book_item .listButton button {
+    background-color: var(--color3);
+    border: 2px solid var(--color4);
+    border-radius: 15px;
+    color: var(--color1);
+    cursor: pointer;
+    margin: auto;
+    padding: 5px;
+    width: 100px;
+    justify-content: center;
+}
+
+.book_shelf .book_list .book_item .listButton .green {
+  background-color: var(--green1);
+  border: 2px solid var(--green2);
+  border-radius: 15px;
+  color: var(--green4);
+  cursor: pointer;
+  margin: auto;
+  padding: 5px;
+  width: 100px;
+  justify-content: center;
+}
+
+.book_shelf .book_list .book_item .listButton .green:hover {
+  box-shadow: var(--green3) 0 1px 10px;
+}
+
+.book_shelf .book_list .book_item .listButton .green:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.book_shelf .book_list .book_item .listButton .red {
+  background-color: var(--red1);
+  border: 2px solid var(--red2);
+  border-radius: 15px;
+  color: var(--red4);
+  cursor: pointer;
+  margin: auto;
+  padding: 5px;
+  width: 100px;
+  justify-content: center;
+}
+
+.book_shelf .book_list .book_item .listButton .red:hover {
+  box-shadow: var(--red3) 0 1px 10px;
+}
+
+.book_shelf .book_list .book_item .listButton .red:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
