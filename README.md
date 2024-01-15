@@ -1,3 +1,3 @@
-Submission Proyek Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage pada kelas "Belajar Membuat Front-End Web untuk Pemula" dari Dicoding
+Bookshelf Application Project is the final assignment for the "Learning to Create a Front-End Web for Beginners" course. I used my knowledge of JavaScript basics, Browser Object Model (BOM), Document Object Model (DOM), and event handling to create interactive functionality. I also implemented DOM and Web Storage manipulation techniques to manage, add, move and delete book data in two categories, "Incomplete reading" and "Completed reading". Also, this website already can save all book data locally.
 
 ![Halaman Web Frontend](https://github.com/rahielhafizh/Bookshelf-Apps/assets/118592742/d0d9cd7b-7b78-4b20-b5f7-25104714b3f8)
