@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="headerBar">
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+      <section class="mainDevelopment">
+        <div class="inputSection">
+          <h2>Tambahkan Buku</h2>
+          <form id="inputBookForm" data-testid="bookForm">
+            <div class="input">
+              <label for="inputBookTitle">Judul Buku</label>
+              <input
+                id="inputBookTitle"
+                type="text"
+                class="inputArea"
+                required
+                data-testid="bookFormTitleInput" />
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Penulis Buku</label>
+              <input
+                id="inputBookAuthor"
+                type="text"
+                class="inputArea"
+                required
+                data-testid="bookFormAuthorInput" />
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Tahun Terbit</label>
+              <input
+                id="inputBookYear"
+                type="number"
+                class="inputArea"
+                required
+                data-testid="bookFormYearInput" />
+            </div>
+            <div class="inputInline">
+              <label for="inputBookIsComplete" class="inlineLabel"
+                >Apakah buku telah selesai dibaca?</label
+              >
+              <input
+                id="inputBookIsComplete"
+                type="checkbox"
+                data-testid="bookFormIsCompleteCheckbox" />
+            </div>
+            <button
+              id="bookSubmit"
+              class="mainButton"
+              type="submit"
+              data-testid="bookFormSubmitButton">
+              Tambah
+            </button>
+          </form>
+        </div>
+
+        <div class="editSection">
+          <h2>Perbarui Buku</h2>
+          <form id="editBookForm">
+            <div class="input">
+              <label for="editBookTitle">Judul Buku</label>
+              <input
+                id="editBookTitle"
+                type="text"
+                class="inputArea"
+                required />
+            </div>
+            <div class="input">
+              <label for="editBookAuthor">Penulis Buku</label>
+              <input
+                id="editBookAuthor"
+                type="text"
+                class="inputArea"
+                required />
+            </div>
+            <div class="input">
+              <label for="editBookYear">Tahun Terbit</label>
+              <input
+                id="editBookYear"
+                type="number"
+                class="inputArea"
+                required />
+            </div>
+            <button id="bookEdit" class="mainButton" type="submit">
+              Perbarui
+            </button>
+          </form>
+        </div>
+
+        <div class="searchSection">
+          <h2>Cari Buku</h2>
+          <form id="searchBook" data-testid="searchBookForm">
+            <label for="searchBookTitle">Masukkan Judul Buku</label>
+            <input
+              id="searchBookTitle"
+              type="text"
+              class="inputArea"
+              data-testid="searchBookFormTitleInput" />
+            <button
+              id="searchSubmit"
+              class="mainButton"
+              type="submit"
+              data-testid="searchBookFormSubmitButton">
+              Cari
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="library">
+        <div class="bookShelf">
+          <h2>List Buku (Belum Dibaca)</h2>
+          <div
+            id="incompleteBookshelfList"
+            class="bookList"
+            data-testid="incompleteBookList"></div>
+        </div>
+
+        <div class="bookShelf">
+          <h2>List Buku (Sudah Dibaca)</h2>
+          <div
+            id="completeBookshelfList"
+            class="bookList"
+            data-testid="completeBookList"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerBar">
+        <h1>Submission Membangun Bookshelf App (Rahiel Hafizh)</h1>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
